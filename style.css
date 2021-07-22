@@ -1,0 +1,246 @@
+body {
+  font-family: 'STIX Two Math', serif;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  background: url("Images/dessert-5105032_1920.jpg");
+  height: 1044px;
+}
+
+.left img {
+  width: 116px;
+}
+
+.left div {
+  line-height: 19px;
+  font-size: 22px;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navbar {
+  nav-left: 0px;
+  display: inline-block;
+}
+
+.navbar li {
+  display: inline-block;
+  font-size: 22px;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  padding: 34px 23px;
+}
+
+.navbar li a:hover,
+.navbar li a:active {
+  text-decoration: underline;
+  color: rgb(255, 0, 255);
+}
+
+.btn {
+  font-family: 'STIX Two Math', serif;
+  margin: 9px;
+  background-color: rgb(5, 99, 5);
+  color: white;
+  padding: 7px;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgb(31, 31, 31);
+}
+
+.section-intro {
+  height: 520px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-intro h1 {
+  text-align: center;
+  color: rgb(255, 9, 255);
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.section-intro header {
+  display: flex;
+  flex: 4;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-to-book-wrapper {
+  flex: 1;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  background-color: rgb(216, 203, 203);
+  /* padding: 50px 300px; */
+  padding: 30px;
+}
+
+.link-to-book {
+  background-color: rgb(62, 182, 142);
+  color: rgb(4, 4, 131);
+  display: block;
+  border-radius: 5px;
+  font-size: 25px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+a.link-to-book:hover {
+  color: rgb(241, 0, 0);
+  text-decoration: none;
+}
+
+.about-section p,
+.about-section h3 {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  font-family: 'STIX Two Math', serif;
+  font-size: 19px;
+  color: red;
+}
+h2 {
+  font-size: 2.1rem;
+  line-height: 1.4;
+  text-align: center;
+  color: rgb(110, 221, 255);
+  margin-top: 50px;
+}
+
+.maindiv {
+  height: 300px;
+  width: 60%;
+  margin: auto;
+  /* position: absolute; */
+  /* left: 50%; */
+  /* top: 200%; */
+  /* transform: translate(-50%, -50%); */
+  background-image: url("Images/dessert-1526592_1920.jpg");
+  background-size: 100% 100%;
+  box-shadow: 1px 2px 10px 5px white;
+  animation: slider 9s infinite linear;
+}
+
+@keyframes slider {
+  10% {
+    background-image: url("Images/dessert-1526592_1920.jpg");
+  }
+  15% {
+    background-image: url("Images/cupcakes-690040_1920.jpg");
+  }
+  35% {
+    background-image: url("Images/muffins-1329679_1920.jpg");
+  }
+  55% {
+    background-image: url("Images/apple-pie-5479993_1920.jpg");
+  }
+  75% {
+    background-image: url("Images/brownie-3042106_1920.jpg");
+  }
+  95% {
+    background-image: url("Images/doughnuts-1868573_1920.jpg");
+  }
+}
+
+.contact-section {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.contact-section > div > h3 {
+  color: whitesmoke;
+}
+.form-group input {
+  font-family: 'STIX Two Math', serif;
+  text-align: center;
+  display: block;
+  width: 308px;
+  padding: 0px;
+  border: 2px solid black;
+  margin: 3px auto;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.container button {
+  display: block;
+  width: 30%;
+  margin: auto;
+  padding: 0px;
+}
+
+.opening-time,
+.address {
+  flex: 1;
+  margin: 20px 10px;
+  font-size: 20px;
+  color: black;
+  padding: 0px;
+}
+
+.form-group p {
+  font-size: 20px;
+  color: lawngreen;
+}
+
+.opening-time p,
+.address p {
+  display: block;
+  color: yellow;
+}
+
+.opening-time p,
+.adress p {
+  font-size: 20px;
+  padding: 0px;
+  text-align: center;
+}
+@media screen and (max-width: 560px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  header .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+  header .navbar li {
+    text-align: left;
+  }
+  .form-group p{
+    font-size: 15px;
+    text-align: center;
+    margin: auto;
+  }
+  .opening-time p,
+  .address p{
+    font-size: 15px;
+    text-align: center;
+  }
+}
